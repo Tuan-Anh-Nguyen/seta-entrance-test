@@ -74,6 +74,7 @@ export default function CreatePostModal({ openProp, closeProp, posts }) {
                })
                .then((data) => {
                     posts.unshift(data);
+                    console.log(data);
                     openNotification('bottomRight', 'success', 'Create new post successfully!');
                     closeProp();
                     form.resetFields();
